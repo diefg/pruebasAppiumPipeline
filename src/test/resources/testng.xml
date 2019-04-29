@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="mySuite" verbose="1">
+    <test name="Ruta Critica">
+        <groups>
+            <run>
+                <include name="RC" />
+            </run>
+        </groups>
+        <classes>
+            <class name="Tests2"/>
+            <class name="Tests3"/>
+        </classes>
+    </test>
+</suite>

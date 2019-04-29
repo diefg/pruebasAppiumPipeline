@@ -2,6 +2,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSFindBy;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.qameta.allure.model.Status;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.support.PageFactory;
 
@@ -29,16 +30,16 @@ public class LoginPage {
     @iOSFindBy(id = "btnIngresar")
     public MobileElement btnLogin;
 
-    void verificarSw() throws NoSuchElementException {
-        switchRecordarRut.click();
-    }
     void login(String usr,String psw){
         try{
+            Thread.sleep(3000);
+            Reports.addStep("Test iniciado",true, Status.PASSED,false);
             switchRecordarRut.click();
-            Thread.sleep(5000);
-            verificarSw();
+            Reports.addStep("Se hizo clic en switch",true, Status.PASSED,false);
             txtRut.setValue(usr);
+            Reports.addStep("Se ingreso rut",true, Status.PASSED,false);
             txtClave.setValue(psw);
+            Reports.addStep("Se ingreso password",true, Status.PASSED,false);
             btnLogin.click();
         }catch (NoSuchElementException ex){
             System.out.println("No se encontró un elemento:"+ex.getMessage());
