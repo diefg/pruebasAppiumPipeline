@@ -1,18 +1,18 @@
-#Appium tests for jenkins
+# Appium tests for jenkins
 
 Needed instalation steps
 
-#Get Appium
+## Get Appium
 Follow the steps on the "Get started guide"
 [get started](http://appium.io/docs/en/about-appium/getting-started/index.html) 
 
-#Specific OS configuration
+## Specific OS configuration
 
-IOS
+## IOS
 Follow the steps in "Basic setup"
 [IOS SetUp](http://appium.io/docs/en/drivers/ios-xcuitest/index.html) 
 
-Android
+## Android
 Follow the steps in "Basic setup"
 [Android SetUp](http://appium.io/docs/en/drivers/android-uiautomator2/index.html) 
 
