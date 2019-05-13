@@ -27,6 +27,17 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$JAVA_HOME/bin
 ```
 
+## To see generated report, you must install Allure
+
+```bash
+brew install allure
+```
+then
+
+```bash
+allure serve "path of your root java project"
+```
+
 
 
 
