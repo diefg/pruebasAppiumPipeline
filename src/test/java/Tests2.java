@@ -8,7 +8,7 @@ public class Tests2 {
     @Test(description = "Test de ruta critica suite 1" ,groups="RC")
     protected void testRc(){
         System.out.println("Esto es ruta critica");
-        Assert.assertTrue(true,"Hola yo soy un test que pasa :)");
+        Assert.assertTrue(true,"Hola yo soy un test de ruta critica :)");
     }
 
     @Test(description = "Test de smoke suite 1",groups="SMOKE")
