@@ -35,7 +35,7 @@ brew install allure
 then
 
 ```bash
-allure serve "path of your root java project"
+allure serve "path of your root java project/build/allure-results"
 ```
 
 
